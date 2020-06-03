@@ -1,0 +1,167 @@
+body {
+	background-color: #eee;
+	color: #888;
+}
+
+h1, h2, h3 {
+	font-family: 'Fauna One', serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+}
+
+h4, h5, h6 {
+	font-family: 'Josefin Slab', serif;
+	text-align: center;
+	color: #000;
+}
+
+/* container */
+
+.container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.col {
+	margin: 10px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container-title {
+
+}
+
+.col-6 {
+	text-align: center;
+	padding: 20px;
+	background-color: rgba(136, 136, 136, 0.3);
+}
+
+/* choropleth map */
+.state {
+	stroke: #FFF;
+	fill-opacity: .7;
+}
+
+.state:hover {
+	stroke: #eee;
+	fill-opacity: .9;
+}
+
+.legend {
+	position: absolute;
+	left: 20px;
+	top: 30px;
+}
+
+/* tooltip */
+.tooltip {	
+    position: absolute;					
+    padding: 2px;
+    border: 0.5px solid #000;	
+    background-color: #FFF;
+    font-size: 10px;
+    color: #000;		
+    text-align: center;
+}
+
+/* line chart */
+#monthAccidents .line,
+#hourAccidents .line {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 2px;
+}
+
+#monthAccidents .dot,
+#hourAccidents .dot {
+	fill: #9ecae1;
+	stroke: white;
+}
+
+#monthAccidents .dot:hover,
+#hourAccidents  .dot:hover {
+	stroke: #3182bd;
+}
+
+/* bar chart */
+.bar {
+	fill: #9ecae1;
+	-webkit-transition-duration: .5s
+}
+
+.bar:hover {
+	fill: #3182bd;
+	-webkit-transition-duration: .5s;
+}
+
+text.w_divergence, text.s_divergence {
+	font-size: 10px;
+	fill: #000;
+}
+
+text.w_value, text.s_value {
+	font-size: 10px;
+}
+
+/* pop-up box */
+.stateInfo {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* slider container*/
+#filterContainer {
+  text-align: center;
+  position: relative;
+  top: 15px;
+  font-size: 14px;
+}
+
+input[name="year"] {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#mapAnimation .counties {
+	fill: none;
+	stroke: #000;
+	stroke-width: 0.25px;
+}
+
